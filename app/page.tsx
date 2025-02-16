@@ -1,7 +1,12 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>Hi there</div>
+    <div>
+      <Button>Sign Up</Button>
+      <Button>Sign In</Button>
+    </div>
   );
+}
+
+function Button({children}){
+  return <button>{children}</button>
 }
